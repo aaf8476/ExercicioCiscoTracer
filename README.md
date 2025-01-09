@@ -1,4 +1,4 @@
-# ExercicioCiscoTracer
+# ExercícioCiscoTracer
 
 Instruções do projeto
 Para o show da banda de Miguel, será necessário configurar uma rede de computadores. A comunicação entre os membros da equipe de produção, que estarão espalhados pelo teatro, é fundamental para manter todos informados e verificar se nada está fugindo do controle. O agente da banda decidiu modernizar a infraestrutura do show para melhorar essa comunicação. Para ajudá-los, você deve usar o Cisco Packet Tracer para criar uma topologia de rede estrela que permita a toda a equipe se comunicar facilmente.
@@ -29,13 +29,67 @@ Trabalhe esse código em seu IDE, suba ele para sua conta no GitHub e compartilh
 
 # Resolução
 
+## 1. Definição do Cenário
+
+Cada membro da equipe de produção terá um computador que precisa se comunicar com os outros membros.
+
+
+## 2. Definição da Topologia
+
+Foi criada uma nova topologia no Cisco Packet Tracer, conforme os passos a seguir:
+
+No o Cisco Packet Tracer.
+Foi criado um novo projeto.
+Arrastando-se um switch para o centro da área de trabalho:
+
+Na barra de dispositivos, foi selecionado um switch e
+Arrastado para o centro da área de trabalho.
+Da mesma forma foram arrastados quatro PCs e posicionados ao redor do switch:
+
+
 # Topologia
 
 ![image](https://github.com/user-attachments/assets/58b65e2e-8700-430d-8aab-fbe7e98c38c4)
 
+## 3. Conexão dos Dispositivos
 
+Cada PC foi conectado a uma porta diferente no switch usando cabos ethernet:
+
+## 4. Configurar os Endereços IP
+
+Clicando-se em cada PC, depois em Desktop e selecionando-se IP Configuration:
+
+Foram atribuídos os seguintes endereços IP:
+
+PC1:
+IP: 192.168.1.2
+Máscara de Sub-rede: 255.255.255.0
+Gateway Padrão: 192.168.1.1
+
+PC2:
+IP: 192.168.1.3
+Máscara de Sub-rede: 255.255.255.0
+Gateway Padrão: 192.168.1.1
+
+PC3:
+IP: 192.168.1.4
+Máscara de Sub-rede: 255.255.255.0
+Gateway Padrão: 192.168.1.1
+
+PC4:
+IP: 192.168.1.5
+Máscara de Sub-rede: 255.255.255.0
+Gateway Padrão: 192.168.1.1
+
+## 5. Teste de Comunicação
+
+Verificação da conectividade:
+
+Por exemplo, no PC1, dentro do Command Prompt foi digitado o ping 192.168.1.3 para testar a conexão com o PC2.
+E assim por diante.
 
 # Telas dos ping - testando a conexão
+
 
 
 ![image](https://github.com/user-attachments/assets/485c4336-8c11-4b87-8e36-89afe9d9d49f)
@@ -49,7 +103,7 @@ Trabalhe esse código em seu IDE, suba ele para sua conta no GitHub e compartilh
 ![image](https://github.com/user-attachments/assets/b632e87b-5df3-463c-8e75-b576f89c7ea3)
 
 
-
+ps. texto elaborado com auxílio do Copilot
 
 ![image](https://github.com/user-attachments/assets/784522f8-05ea-49fb-9afb-674c10ce0e67)
 
